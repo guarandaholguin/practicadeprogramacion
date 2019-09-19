@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Maps</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ce0a14f3-8253-4f44-b694-b8f8b6827ed9&lang=ru_RU"
+    type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	       ymaps.ready(init);
+var placemarks = [
+    {
+        latitude: 61.698653, 
+        longitude: 99.505405,
+        hintContent: '<div class="map__hint">Население: 144,5 млн (2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 144,5 млн (2019 г.)',
+            '</div>'
+        ]
+    },
+    {
+        latitude: 48.136207, 
+        longitude: 67.153550,
+        hintContent: '<div class="map__hint">Население: 18,04 млн (2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 18,04 млн (2019 г.)',
+            '</div>'
+        ]
+    },
+    {
+        latitude: 45.516505, 
+        longitude: 103.835320,
+        hintContent: '<div class="map__hint">Население: 3,076 млн (2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 3,076 млн (2019 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 32.278826, 
+        longitude: 102.110178,
+        hintContent: '<div class="map__hint">Население: 1,386 млрд (2017 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 1,386 млрд (2017 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 32.046882,   
+        longitude: 54.154919,
+        hintContent: '<div class="map__hint">Население: 81,16 млн (2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население:81,16 млн (2019 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 39.056249,    
+        longitude: 35.302075,
+        hintContent: '<div class="map__hint">Население: 82 003 882 чел. (2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 82 003 882 чел. (2019 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 49.027530,    
+        longitude: 31.482771,
+        hintContent: '<div class="map__hint">Население:41 840 426 чел. (июль 2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 41 840 426 чел. (июль 2019 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 52.858248,    
+        longitude: 27.701393, 
+        hintContent: '<div class="map__hint">Население:9 475 174 чел. (2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 9 475 174 чел. (2019 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 41.765066,     
+        longitude: 63.150118, 
+        hintContent: '<div class="map__hint">Население:33 254 100 чел. (2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 33 254 100 чел. (2019 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 33.356617,     
+        longitude: 65.797642, 
+        hintContent: '<div class="map__hint">Население: 34 940 837 чел. (2018 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 34 940 837 чел. (2018 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 29.801824,    
+        longitude: 69.280320, 
+        hintContent: '<div class="map__hint">Население: 197 015 955 чел. (2017 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 197 015 955 чел. (2017 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 22.835539,     
+        longitude: 78.710134, 
+        hintContent: '<div class="map__hint">Население: 1 349 217 956 чел. (3 августа 2018 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 1 349 217 956 чел. (3 августа 2018 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 62.113107,      
+        longitude: 15.088463, 
+        hintContent: '<div class="map__hint">Население: 10 238 627 чел. (2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 10 238 627 чел. (2019 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 64.570968,       
+        longitude: 11.966377 , 
+        hintContent: '<div class="map__hint">Население: 5 328 212 чел. (1 января 2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 5 328 212 чел. (1 января 2019 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 62.723206,      
+        longitude: 25.933922 , 
+        hintContent: '<div class="map__hint">Население: 5 521 158 чел. (июль 2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 5 521 158 чел. (июль 2019 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 33.053631,       
+        longitude: 42.872393 , 
+        hintContent: '<div class="map__hint">Население: 38 274 618 чел. (2017 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 38 274 618 чел. (2017 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 22.848295,        
+        longitude: 45.725533 , 
+        hintContent: '<div class="map__hint">Население: 33 000 000 чел. (2018 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 33 000 000 чел. (2018 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 26.112189,       
+        longitude: 29.905230, 
+        hintContent: '<div class="map__hint">Население: 100 006 930 чел. (9 августа 2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 100 006 930 чел. (9 августа 2019 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 17.337860,       
+        longitude: 30.639351 , 
+        hintContent: '<div class="map__hint">Население: 41 592 539 чел. (июнь 2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 41 592 539 чел. (июнь 2019 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 27.747254,       
+        longitude:17.468477, 
+        hintContent: '<div class="map__hint">Население: 6 678 567 чел. (2018 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 6 678 567 чел. (2018 г.)',
+            '</div>'
+        ]
+    },
+	{
+        latitude: 41.092237,        
+        longitude:-4.617574, 
+        hintContent: '<div class="map__hint">Население: 46 714 997 чел. (2019 г.)</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            '<img class="map__b" src="img/logo.jpg" alt="Бургер"/>',
+            'Население: 46 714 997 чел. (2019 г.)',
+            '</div>'
+        ]
+    }
+],
+    geoObjects= [];
+function init() {
+    var map = new ymaps.Map('map', {
+        center: [59.169850,37.160711],
+        zoom: 3,
+        //controls: ['zoomControl'],
+      // behaviors: ['drag'],
+		gestureHandling: 'greedy'
+
+    });
+    for (var i = 0; i < placemarks.length; i++) {
+            geoObjects[i] = new ymaps.Placemark([placemarks[i].latitude, placemarks[i].longitude],
+            {
+                hintContent: placemarks[i].hintContent,
+                balloonContent: placemarks[i].balloonContent.join('')
+            },
+            {
+               // iconLayout: 'default#image',
+              //  iconImageHref: 'img/12.jpg',
+               // iconImageSize: [46, 57],
+              //  iconImageOffset: [-23, -57],
+              //  iconImageClipRect: [[415, 0], [461, 57]]
+            });
+    }
+	
+    var clusterer = new ymaps.Clusterer({
+       
+    });
+    map.geoObjects.add(clusterer);
+    clusterer.add(geoObjects);
+}
+		</script>
+
+</head>
+
+<body>
+
+<div id="map" align="middle" style="width: 100%; height: 100vh;"></div>
+</body>
+</html>
